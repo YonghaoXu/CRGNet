@@ -3,7 +3,7 @@
 <h3 align="center"> <a href="https://yonghaoxu.github.io/">Yonghao Xu</a> and <a href="http://pedram-ghamisi.com/">Pedram Ghamisi</a></h3>
 <br
  
-![](Figure/CRGNet.png)
+![](Figure/CRGNets.png)
 
 *This research has been conducted at the [Institute of Advanced Research in Artificial Intelligence (IARAI)](https://www.iarai.ac.at/).*
     
