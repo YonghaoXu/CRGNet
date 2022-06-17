@@ -13,8 +13,9 @@ This is the official PyTorch implementation of the weakly supervised semantic se
  1. [Preparation](#preparation)
  2. [Usage](#usage)
  3. [Paper](#paper)
- 4. [Acknowledgement](#acknowledgement)
- 5. [License](#license)
+ 4. [Results](#results)
+ 5. [Acknowledgement](#acknowledgement)
+ 6. [License](#license)
 
 ### Preparation
 - Package requirements: The scripts in this repo are tested with `torch==1.8` and `torchvision==0.9` using a single NVIDIA Tesla V100 GPU.
@@ -71,10 +72,14 @@ CUDA_VISIBLE_DEVICES=0 python TestVaihingen.py
 CUDA_VISIBLE_DEVICES=0 python TestZurich.py 
 ```
 
+### Results
+- Dynamically expanded annotations in different iterations:
 ![](Figure/RegionGrowing.png)
-<p align="center">Dynamically expanded annotations in different iterations.</p>
 
-Performance contribution of each module in CRGNet (reported in mean F1):
+- Example segmentation results of an image in the test set on the Zurich Summer dataset:
+![](Figure/Result.png)
+
+- Performance contribution of each module in CRGNet (reported in mean F1):
 
 |  Method  | RG | CR | ST | dCRF | Vaihingen | Zurich Summer |
 |:--------:|:--:|:--:|:--:|:----:|:---------:|:-------------:|
@@ -84,13 +89,10 @@ Performance contribution of each module in CRGNet (reported in mean F1):
 |    +ST   |  √ |  √ |  √ |      |   68.07   |     71.26     |
 |   +dCRF  |  √ |  √ |  √ |   √  |   70.92   |     75.68     |
 
-![](Figure/Result.png)
-<p align="center">Example segmentation results of an image in the test set on the Zurich Summer dataset.</p>
-
 ### Paper
 **[Consistency-regularized region-growing network for semantic segmentation of urban scenes with point-level annotations](https://arxiv.org/abs/2202.03740)**
 
-Please cite the following paper if you use the data or the code:
+Please cite the following paper if the code is useful for your research:
 
 ```
 @article{uaers,
