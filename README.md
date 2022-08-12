@@ -95,12 +95,12 @@ CUDA_VISIBLE_DEVICES=0 python TestZurich.py
 Please cite the following paper if the code is useful for your research:
 
 ```
-@article{uaers,
+@article{crgnet,
   title={Consistency-regularized region-growing network for semantic segmentation of urban scenes with point-level annotations}, 
   author={Xu, Yonghao and Ghamisi, Pedram},
   journal={IEEE Trans. Image Process.},  
-  volume={},
-  pages={},
+  volume={31},
+  pages={5038-5051},
   year={2022},
 }
 ```
